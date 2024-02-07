@@ -5,16 +5,23 @@ import { Repo, Law, Code, Book } from '@github/octicons-react'
 import styles from '../public/index.module.css'
 import ProfileSection from 'components/ProfileSection'
 
-const AboutSection: FC = () => (
+const AboutProjectsSection: FC = () => (
   <Box w='80%'>
     <Heading as='h3' fontWeight='600'>
-      About
+      Projects
     </Heading>
     <Text fontSize='18px' mt='10px'>
-      Hi! I'm Zack, a first-year undergraduate student in Computer Science at the University of Missouri. I work as a
-      research assistant in the Virtualization, Multimedia, and Networking (VIMAN) lab under Dr. Prasad Calyam.
-      {/* todo: introduce webdev and compiler work, maybe in next section though */}
+      Here are some of the programming projects I've worked on over the past few years.
     </Text>
+    {/* 
+    in order of pride:
+    Docs Hotkey
+    Nodecode
+    Math IA (present as robotics)
+    ChesSRS
+    Stellar (with compiler demo)
+    RapidReels
+    */}
   </Box>
 )
 
@@ -31,7 +38,7 @@ const HomePage: FC = () => (
       my='50px'
     >
       <ProfileSection />
-      <AboutSection />
+      <AboutProjectsSection />
     </Flex>
   </Box>
 )

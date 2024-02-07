@@ -5,7 +5,8 @@ const theme = extendTheme({
   styles: {
     global: props => ({
       'body, html': {
-        backgroundColor: mode('white', 'black')(props),
+        backgroundColor: mode('#eeeeee', '#181a1b')(props),
+        color: mode('#000000', '#e8e6e3')(props),
         scrollBehavior: 'smooth'
       }
     })
@@ -13,7 +14,7 @@ const theme = extendTheme({
   components: {
     Heading: {
       baseStyle: {
-        fontFamily: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace, Calibri'
+        fontFamily: '"Open Sans", Calibri, serif, sans-serif'
       }
     },
     Text: {

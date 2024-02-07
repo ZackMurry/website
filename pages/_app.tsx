@@ -3,7 +3,6 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import { parse } from 'cookie'
 import theme from 'lib/theme'
-import secureCookieStorageManager from '../lib/secureCookieStorageManager'
 
 interface Props {
   Component?: React.ComponentType
@@ -12,13 +11,12 @@ interface Props {
 }
 
 const App: NextPage<Props> = ({ Component, pageProps, cookies }) => {
-  const colorModeManager = typeof cookies === 'string' ? secureCookieStorageManager(cookies) : localStorageManager
   return (
     <>
       <Head>
         <title>Zack Murry</title>
       </Head>
-      <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
+      <ChakraProvider theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>
     </>
