@@ -3,13 +3,14 @@ import { Box, Flex, Heading, Icon, IconButton, Text, useColorMode, useColorModeV
 import { MarkGithub } from '@github/octicons-react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
+// todo: mobile navbar
 const Header: FC = () => {
   const iconColor = useColorModeValue('black', 'white')
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Box borderBottom='1px solid rgb(52, 56, 58)' w='100%' py='15px'>
-      <Flex mx='auto' maxWidth='1080px' w='65%' justifyContent='space-between' alignItems='center'>
-        <Heading as='h4' fontSize='24px' fontWeight='normal'>
+      <Flex mx='auto' maxWidth='1080px' w={{ base: '90%', md: '65%' }} justifyContent='space-between' alignItems='center'>
+        <Heading as='h4' fontSize={{ base: '20px', xl: '24px' }} fontWeight='normal'>
           <a href='/'>Zack Murry</a>
         </Heading>
         <Flex justifyContent='space-evenly' alignItems='center'>
@@ -29,9 +30,9 @@ const Header: FC = () => {
               )}
             </IconButton>
           </Box>
-          <Box p='0 5px' pb='5px'>
+          <Box p='0 5px' pb='1px'>
             <a target='_blank' rel='noopener noreferrer' href='https://github.com/ZackMurry'>
-              <svg fill={iconColor} width='32' height='31.25' viewBox='0 0 16 16'>
+              <svg fill={iconColor} width='24' height='31.25' viewBox='0 0 16 16'>
                 <MarkGithub />
               </svg>
             </a>
