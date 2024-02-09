@@ -17,8 +17,8 @@ const ProfileSection: FC = () => {
     >
       <Box mx={{ base: '0', xl: 'auto' }}>
         <Image
-          src='/profile_pic_cropped.png'
-          //src=''
+          // src='/profile_pic_cropped.png'
+          src=''
           width={imageSize}
           height={imageSize}
           alt='Profile picture.'

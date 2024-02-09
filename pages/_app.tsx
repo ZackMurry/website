@@ -1,16 +1,15 @@
-import { ChakraProvider, localStorageManager } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { parse } from 'cookie'
 import theme from 'lib/theme'
+// import 'public/globals.css'
 
 interface Props {
   Component?: React.ComponentType
   pageProps?: any
-  cookies: any
 }
 
-const App: NextPage<Props> = ({ Component, pageProps, cookies }) => {
+const App: NextPage<Props> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -21,21 +20,6 @@ const App: NextPage<Props> = ({ Component, pageProps, cookies }) => {
       </ChakraProvider>
     </>
   )
-}
-
-export const getInitialProps = async ({ ctx }) => {
-  const { req } = ctx
-  if (req) {
-    const parsed = parse(req.headers?.cookie ?? '')
-    return {
-      jwt: parsed?.jwt,
-      id: parsed?.id,
-      cookies: req.headers?.cookie ?? ''
-    }
-  }
-  return {
-    cookies: ''
-  }
 }
 
 export default App

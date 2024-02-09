@@ -1,8 +1,6 @@
 import { Box, Flex, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import Header from 'components/Header'
 import { FC } from 'react'
-import { Repo, Law, Code, Book } from '@github/octicons-react'
-import styles from '../public/index.module.css'
 import ProfileSection from 'components/ProfileSection'
 
 const AboutSection: FC = () => (
@@ -18,6 +16,7 @@ const AboutSection: FC = () => (
   </Box>
 )
 
+// todo: extract this code into _app.tsx
 const HomePage: FC = () => (
   <Box mx={{ base: '0%', lg: '5%', xl: '10%' }}>
     <Header />
