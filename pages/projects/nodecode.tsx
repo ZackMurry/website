@@ -4,10 +4,10 @@ import { FC } from 'react'
 import ProfileSection from 'components/ProfileSection'
 import Image from 'next/image'
 import { ExternalLinkIcon, LinkIcon } from '@chakra-ui/icons'
-// import dynamic from 'next/dynamic'
-// const ReactEmbedGist = dynamic(() => import('react-embed-gist'), {
-// ssr: false
-// })
+import dynamic from 'next/dynamic'
+const ReactEmbedGist = dynamic(() => import('react-embed-gist'), {
+  ssr: false
+})
 
 const NodecodeSection: FC = () => {
   const gistClass = useColorModeValue('', 'dark-gist')
@@ -65,7 +65,7 @@ const NodecodeSection: FC = () => {
 
       <Box className={gistClass}>
         {/* @ts-ignore */}
-        {/* <ReactEmbedGist gist='ZackMurry/b340dd3ea0876f3f2a3bb497e00aa8b9' file='ASTFunctionDefinition.cs' /> */}
+        <ReactEmbedGist gist='ZackMurry/b340dd3ea0876f3f2a3bb497e00aa8b9' file='ASTFunctionDefinition.cs' />
       </Box>
     </Box>
   )

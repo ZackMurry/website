@@ -2,7 +2,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import theme from 'lib/theme'
-// import 'public/globals.css'
+import 'public/globals.css'
 
 interface Props {
   Component?: React.ComponentType
