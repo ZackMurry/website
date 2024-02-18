@@ -77,6 +77,74 @@ const ResearchSection: FC = () => (
   </Box>
 )
 
+const WebDevelopmentSection: FC = () => (
+  <Box mt='50px' mx={{ base: 'auto', xl: '0px' }}>
+    <Heading as='h3' fontWeight='600' fontSize={{ base: '20px', xl: '28px' }}>
+      Web Development
+    </Heading>
+    <Text fontSize={{ base: '14px', xl: '18px' }} mt='15px' mb='35px'>
+      I started making websites in my freshman year of high school, which was at the start of the pandemic. By following a
+      few free, online courses, I taught myself the basics of the Java Spring framework and React. Since then, I have
+      continued learning through creating projects. A few highlights are listed below, with more projects (both web and
+      non-web) and information on the{' '}
+      <a href='/projects' style={{ textDecoration: 'underline' }}>
+        Projects
+      </a>{' '}
+      page.
+    </Text>
+    <Image
+      src='/chessrs.png'
+      width='1918'
+      height='976'
+      alt='Screenshot from chess project.'
+      style={{ width: '100%', marginTop: '15px' }}
+    />
+    <Text
+      w={{ base: '90%', xl: '80%' }}
+      color='#aaa'
+      textAlign='center'
+      mx='auto'
+      fontSize={{ base: '12px', xl: '14px' }}
+      mb='35px'
+    >
+      ChesSRS is an interactive chess learning website that uses a flashcard-like system for both creating and practicing
+      opening moves.
+    </Text>
+
+    {/* docs hotkey */}
+
+    <Image
+      src='/sigma_scoring.png'
+      width='1918'
+      height='976'
+      alt='Screenshot from scorekeeping project.'
+      style={{ width: '100%', marginTop: '15px' }}
+    />
+    {/* todo: change text color based on color mode */}
+    <Text
+      w={{ base: '90%', xl: '80%' }}
+      color='#aaa'
+      textAlign='center'
+      mx='auto'
+      fontSize={{ base: '12px', xl: '14px' }}
+      mb='35px'
+      mt='5px'
+    >
+      <a
+        target='_blank'
+        rel='noopener noreferrer'
+        href='https://central-robotics.github.io/sigma-scoring/'
+        style={{ textDecoration: 'underline' }}
+      >
+        Sigma Scoring
+      </a>{' '}
+      is a web app that allows for visual scorekeeping for the 2022-2023 FIRST Technology Challenge (FTC) game. I was a
+      programmer for an FTC robotics team for two years in high school, and I currently volunteer at local tournaments to
+      help score matches.
+    </Text>
+  </Box>
+)
+
 // todo: extract this code into _app.tsx
 const HomePage: FC = () => (
   <Box mx={{ base: '0%', lg: '5%', xl: '10%' }}>
@@ -95,6 +163,7 @@ const HomePage: FC = () => (
       <Box w={{ base: '100%', lg: '90%', xl: '80%' }} mx='auto'>
         <AboutSection />
         <ResearchSection />
+        <WebDevelopmentSection />
       </Box>
     </Stack>
   </Box>
