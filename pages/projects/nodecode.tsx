@@ -96,8 +96,8 @@ const NodecodeSection: FC = () => {
       </Text>
 
       <Box className={`${gistClass} ${gistSize}`}>
-        {/* @ts-ignore */}
         <ReactEmbedGist
+          // @ts-ignore
           gist="ZackMurry/b340dd3ea0876f3f2a3bb497e00aa8b9"
           file="ASTFunctionDefinition.cs"
         />
@@ -115,9 +115,8 @@ const NodecodePage: FC = () => (
       mx="auto"
       maxWidth="1080px"
       width={{base: '95%', md: '85%', lg: '80%', xl: '65%'}}
-      height="5000px"
       mt={{base: '20px', xl: '50px'}}
-      mb="50px">
+      mb="350px">
       <ProfileSection />
       <NodecodeSection />
     </Stack>

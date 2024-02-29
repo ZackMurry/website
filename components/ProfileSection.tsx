@@ -56,12 +56,12 @@ const ProfileSection: FC = () => {
         <Heading as="h6" fontSize={{base: '18px', xl: '22px'}}>
           Zack Murry
         </Heading>
-        <Text mt="5px" fontSize={{base: '14px', xl: '18px'}}>
+        <Text mt="5px" fontSize={{base: '14px', xl: '16px'}}>
           B.S. student in Computer Science and Mathematics
         </Text>
         <Text
           mt={{base: '0px', xl: '5px'}}
-          fontSize={{base: '14px', xl: '18px'}}>
+          fontSize={{base: '14px', xl: '16px'}}>
           University of Missouri
         </Text>
       </Flex>
