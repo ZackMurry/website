@@ -1,6 +1,16 @@
 .dark-gist .gist {
   font-size: 18px;
 }
+
+.gist-size-small .blob-code-inner {
+  /*.gist-size-small .blob-num*/
+  font-size: 10px !important;
+}
+
+.gist-size-small .blob-num {
+  display: none;
+}
+
 .dark-gist .gist-meta,
 .dark-gist .gist-file,
 .dark-gist .octotree_toggle,
