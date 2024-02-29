@@ -116,7 +116,7 @@ const WebDevelopmentSection: FC = () => {
         then, I have continued learning through creating projects. A few
         highlights are listed below, with more projects (both web and non-web)
         and information on the{' '}
-        <a href="/projects" style={{textDecoration: 'underline'}}>
+        <a href="/projects.html" style={{textDecoration: 'underline'}}>
           Projects
         </a>{' '}
         page.

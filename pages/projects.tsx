@@ -96,7 +96,7 @@ const AboutProjectsSection: FC = () => {
           fontWeight="600"
           fontSize={{base: '18px', xl: '24px'}}
           textDecor="underline">
-          <a href="/projects/nodecode">Nodecode</a>
+          <a href="/nodecode.html">Nodecode</a>
         </Heading>
         <Box mt="10px">
           <Box>
@@ -105,15 +105,13 @@ const AboutProjectsSection: FC = () => {
               programs and is particularly geared towards new programmers. The
               program placed 5th overall in Software Development at the 2022
               National Technology Student Association Convention out of 500+
-              competitors. While it similar to block-code technologies like MIT
-              Scratch, it differs by offering a graph-based approach to
+              competitors. While it is similar to block-code technologies like
+              MIT Scratch, it differs by offering a graph-based approach to
               programming that allows for further visualization. This is among
               the first general-purpose node-based programming environment, as
               the idea has only been used in applications with limited scope,
               like in game-development software. You can read about how it works{' '}
-              <a
-                href="/projects/nodecode"
-                style={{textDecoration: 'underline'}}>
+              <a href="/nodecode.html" style={{textDecoration: 'underline'}}>
                 here
               </a>
               .

@@ -39,7 +39,7 @@ const Header: FC = () => {
             </a>
           </Box>
           <Box p="0 5px" pt="3px">
-            <a href="/projects">
+            <a href="/projects.html">
               <Heading as="h5" fontWeight="normal" fontSize="18px">
                 Projects
               </Heading>
