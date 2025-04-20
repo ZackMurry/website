@@ -8,20 +8,20 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import Header from 'components/Header'
-import {FC} from 'react'
+import { FC } from 'react'
 import ProfileSection from 'components/ProfileSection'
 import Image from 'next/image'
-import {ExternalLinkIcon, LinkIcon} from '@chakra-ui/icons'
-import {MarkGithub} from '@github/octicons-react'
+import { ExternalLinkIcon, LinkIcon } from '@chakra-ui/icons'
+import { MarkGithub } from '@github/octicons-react'
 
 const AboutProjectsSection: FC = () => {
   const iconColor = useColorModeValue('black', 'white')
   return (
-    <Box w={{base: '90%', xl: '80%'}} mx={{base: 'auto', xl: '0px'}}>
-      <Heading as="h3" fontWeight="600" fontSize={{base: '20px', xl: '28px'}}>
+    <Box w={{ base: '90%', xl: '80%' }} mx={{ base: 'auto', xl: '0px' }}>
+      <Heading as='h3' fontWeight='600' fontSize={{ base: '20px', xl: '28px' }}>
         Projects
       </Heading>
-      <Text fontSize={{base: '14px', xl: '18px'}} mt="10px">
+      <Text fontSize={{ base: '14px', xl: '18px' }} mt='10px'>
         Here are some of the programming projects I've worked on over the past
         few years.
       </Text>
@@ -34,73 +34,79 @@ const AboutProjectsSection: FC = () => {
     Stellar (with compiler demo)
     RapidReels
     */}
-      <Box my="30px">
+      <Box my='30px'>
         <Heading
-          as="h3"
-          fontWeight="600"
-          fontSize={{base: '18px', xl: '24px'}}
-          textDecor="underline">
+          as='h3'
+          fontWeight='600'
+          fontSize={{ base: '18px', xl: '24px' }}
+          textDecor='underline'
+        >
           <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs-hotkey.zackmurry.com">
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://docs-hotkey.zackmurry.com'
+          >
             Docs Hotkey
-            <ExternalLinkIcon mt="-5px" width="24px" ml="10px" />
+            <ExternalLinkIcon mt='-5px' width='24px' ml='10px' />
           </a>
         </Heading>
-        <Stack mt="10px" direction={{base: 'column', xl: 'row'}}>
-          <Box width={{base: '100%', xl: '60%'}}>
-            <Text fontSize={{base: '14px', xl: '18px'}}>
+        <Stack mt='10px' direction={{ base: 'column', xl: 'row' }}>
+          <Box width={{ base: '100%', xl: '60%' }}>
+            <Text fontSize={{ base: '14px', xl: '18px' }}>
               A Chrome extension that enables the creation of complex keyboard
               shortcuts for Google Docs. These hotkeys are fully customizable
               and are compatible with a range of Docs functionality, including
               highlight (most popular), fonts, headings, add-ons, and more. Docs
-              Hotkey is published on the Chrome Web Store, is used by over 2,500
+              Hotkey is published on the Chrome Web Store, is used by over 8,500
               users every week, and has a five-star rating.
             </Text>
-            <Flex justifyContent="flex-start" alignItems="center" mt="20px">
+            <Flex justifyContent='flex-start' alignItems='center' mt='20px'>
               <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://chrome.google.com/webstore/detail/docs-hotkey/npkpplmpfeaeemeecniaikpjjfbfefhh?hl=en&authuser=0">
-                <LinkIcon boxSize={8} mr="10px" />
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://chrome.google.com/webstore/detail/docs-hotkey/npkpplmpfeaeemeecniaikpjjfbfefhh?hl=en&authuser=0'
+              >
+                <LinkIcon boxSize={8} mr='10px' />
               </a>
 
               <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/ZackMurry/docs-hotkey">
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://github.com/ZackMurry/docs-hotkey'
+              >
                 <svg
                   fill={iconColor}
-                  width="32"
-                  height="31.25"
-                  viewBox="0 0 16 16">
+                  width='32'
+                  height='31.25'
+                  viewBox='0 0 16 16'
+                >
                   <MarkGithub />
                 </svg>
               </a>
             </Flex>
           </Box>
-          <Box my={{base: '15px', xl: 0}}>
+          <Box my={{ base: '15px', xl: 0 }}>
             <Image
-              src="/docs_hotkey_preview.png"
-              width="250"
-              height="600"
-              alt="Docs Hotkey Screenshot."
+              src='/docs_hotkey_preview.png'
+              width='250'
+              height='600'
+              alt='Docs Hotkey Screenshot.'
             />
           </Box>
         </Stack>
       </Box>
-      <Box my="40px">
+      <Box my='40px'>
         <Heading
-          as="h3"
-          fontWeight="600"
-          fontSize={{base: '18px', xl: '24px'}}
-          textDecor="underline">
-          <a href="/nodecode.html">Nodecode</a>
+          as='h3'
+          fontWeight='600'
+          fontSize={{ base: '18px', xl: '24px' }}
+          textDecor='underline'
+        >
+          <a href='/nodecode.html'>Nodecode</a>
         </Heading>
-        <Box mt="10px">
+        <Box mt='10px'>
           <Box>
-            <Text fontSize={{base: '14px', xl: '18px'}}>
+            <Text fontSize={{ base: '14px', xl: '18px' }}>
               Nodecode is a desktop application for creating visually expressive
               programs and is particularly geared towards new programmers. The
               program placed 5th overall in Software Development at the 2022
@@ -111,39 +117,42 @@ const AboutProjectsSection: FC = () => {
               the first general-purpose node-based programming environment, as
               the idea has only been used in applications with limited scope,
               like in game-development software. You can read about how it works{' '}
-              <a href="/nodecode.html" style={{textDecoration: 'underline'}}>
+              <a href='/nodecode.html' style={{ textDecoration: 'underline' }}>
                 here
               </a>
               .
             </Text>
-            <Flex justifyContent="flex-start" alignItems="center" mt="20px">
+            <Flex justifyContent='flex-start' alignItems='center' mt='20px'>
               <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://chrome.google.com/webstore/detail/docs-hotkey/npkpplmpfeaeemeecniaikpjjfbfefhh?hl=en&authuser=0">
-                <LinkIcon boxSize={8} mr="10px" />
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://chrome.google.com/webstore/detail/docs-hotkey/npkpplmpfeaeemeecniaikpjjfbfefhh?hl=en&authuser=0'
+              >
+                <LinkIcon boxSize={8} mr='10px' />
               </a>
 
               <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/ZackMurry/docs-hotkey">
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://github.com/ZackMurry/docs-hotkey'
+              >
                 <svg
                   fill={iconColor}
-                  width="32"
-                  height="31.25"
-                  viewBox="0 0 16 16">
+                  width='32'
+                  height='31.25'
+                  viewBox='0 0 16 16'
+                >
                   <MarkGithub />
                 </svg>
               </a>
             </Flex>
           </Box>
-          <Box my="20px">
+          <Box my='20px'>
             <Image
-              src="/nodecode_preview.png"
-              width="1920"
-              height="1080"
-              alt="Nodecode Screenshot."
+              src='/nodecode_preview.png'
+              width='1920'
+              height='1080'
+              alt='Nodecode Screenshot.'
             />
           </Box>
         </Box>
@@ -153,16 +162,17 @@ const AboutProjectsSection: FC = () => {
 }
 
 const ProjectsPage: FC = () => (
-  <Box mx={{base: '0%', lg: '5%', xl: '10%'}}>
+  <Box mx={{ base: '0%', lg: '5%', xl: '10%' }}>
     <Header />
     <Stack
       //className={styles.content} */}
-      direction={{base: 'column', xl: 'row'}}
-      mx="auto"
-      maxWidth="1080px"
-      width={{base: '95%', md: '85%', lg: '80%', xl: '65%'}}
-      mt={{base: '20px', xl: '50px'}}
-      mb="350px">
+      direction={{ base: 'column', xl: 'row' }}
+      mx='auto'
+      maxWidth='1080px'
+      width={{ base: '95%', md: '85%', lg: '80%', xl: '65%' }}
+      mt={{ base: '20px', xl: '50px' }}
+      mb='350px'
+    >
       <ProfileSection />
       <AboutProjectsSection />
     </Stack>

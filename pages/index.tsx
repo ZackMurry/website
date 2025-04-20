@@ -245,6 +245,7 @@ const WebDevelopmentSection: FC = () => {
 }
 
 // todo: extract this code into _app.tsx
+// todo: interactive CV (with links and more) would be cool
 const HomePage: FC = () => (
   <Box mx={{ base: '0%', lg: '5%', xl: '10%' }}>
     <Header />
