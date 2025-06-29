@@ -1,11 +1,18 @@
 import type { Metadata } from 'next'
-import { Noto_Sans, Nunito_Sans, Open_Sans } from 'next/font/google'
+import { Noto_Sans, Noto_Sans_Mono, Nunito_Sans, Open_Sans } from 'next/font/google'
 import './globals.css'
+import '@radix-ui/themes/styles.css'
 
-const nunitoSans = Noto_Sans({
+const notoSans = Noto_Sans({
   subsets: ['latin'],
-  variable: '--font-nunito-sans', // Optional: use with Tailwind
-  display: 'swap' // Better CLS
+  variable: '--font-noto-sans',
+  display: 'swap'
+})
+
+const notoMono = Noto_Sans_Mono({
+  subsets: ['latin'],
+  variable: '--font-noto-mono',
+  display: 'swap'
 })
 
 export default function RootLayout({
@@ -15,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${nunitoSans.variable} antialiased`}>{children}</body>
+      <head>
+        <title>Zack Murry</title>
+      </head>
+      <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>{children}</body>
     </html>
   )
 }

@@ -14,7 +14,8 @@ module.exports = {
         lightText: colors.zinc['600']
       },
       fontFamily: {
-        sans: ['var(--font-nunito-sans)', 'Inter', 'system-ui', 'sans-serif']
+        sans: ['var(--font-noto-sans)', 'Inter', 'system-ui', 'sans-serif'],
+        monon: ['var(--font-noto-mono)', 'mono', 'var(--font-noto-sans)', 'Inter', 'system-ui', 'sans-serif']
       }
     }
   },
