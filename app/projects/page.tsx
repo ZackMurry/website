@@ -35,9 +35,8 @@ const ProjectsPage = () => (
           Docs Hotkey
         </Link>
         , an open-source Chrome extension for creating custom hotkeys for Google Docs, which I released in 2022. It's slowly
-        grown over the years, and it now has almost 10,000 weekly active users, but I remember being excited when it first
-        reached 50 users. I still add new features, respond to support emails, and repair it when Google tweaks the Docs UI
-        every year.
+        grown over the years, and it now has almost 10,000 weekly active users. I still add new features, respond to support
+        emails, and repair it when Google tweaks the Docs UI every year.
       </p>
       <p>
         My latest project is{' '}
