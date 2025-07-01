@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react'
 
 interface Props {
   href: string
-  className: string
+  className?: string
   children: ReactNode
 }
 
