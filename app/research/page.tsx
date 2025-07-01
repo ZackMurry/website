@@ -14,9 +14,9 @@ const ResearchPage = () => (
     <article className='text-zinc-600 grid gap-4'>
       <p>
         My work in the Virtualization, Multimedia, and Networking (VIMAN) Lab is focused on creating solutions for autonomous
-        drones. We're currently working on a route generation software for package delivery using drones and delivery trucks
-        using reinforcement learning (RL) with a Deep Q-Network (DQN). Additionally, I run experiments on the NSF-funded
-        Aerial Experimentation and Research Platform for Advanced Wireless (
+        drones. We&apos;re currently working on a route generation software for package delivery using drones and delivery
+        trucks using reinforcement learning (RL) with a Deep Q-Network (DQN). Additionally, I run experiments on the
+        NSF-funded Aerial Experimentation and Research Platform for Advanced Wireless (
         <ExternalLink href='https://aerpaw.org'>AERPAW</ExternalLink>) testbed, which facilitates experiments with autonomous
         drones and 5G networks.
       </p>
@@ -26,9 +26,9 @@ const ResearchPage = () => (
         Research Experience for Undergraduates (REU) program. I leveraged their{' '}
         <ExternalLink href='https://floto.cs.uchicago.edu'>FLOTO</ExternalLink> platform for broadband data collection to
         conduct 5G experiments on the Agricultural and Rural Wireless (
-        <ExternalLink href='https://arawireless.org'>ARA</ExternalLink>) testbed. Specifically, I measured their network's
-        capabilities and deployed a six-node Hadoop cluster over a six-mile diameter to prototype a distributed computing
-        setup over 5G.
+        <ExternalLink href='https://arawireless.org'>ARA</ExternalLink>) testbed. Specifically, I measured their
+        network&apos;s capabilities and deployed a six-node Hadoop cluster over a six-mile diameter to prototype a
+        distributed computing setup over 5G.
       </p>
     </article>
   </div>
