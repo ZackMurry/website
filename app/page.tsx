@@ -15,7 +15,7 @@ const HomePage = () => (
     <article>
       <div className='grid gap-4 text-zinc-600'>
         <p>
-          I&apos;m a student at the University of Missouri in computer science and math from Springfield, MO. This summer,
+          I&apos;m a computer science and math student at the University of Missouri from Springfield, MO. This summer,
           I&apos;m interning at <ExternalLink href='https://garmin.com'>Garmin</ExternalLink> in Olathe, KS, on the API team
           for the Garmin Connect platform. During the school year, I work at Mizzou&apos;s Virtualization, Multimedia, and
           Networking (VIMAN) Lab under{' '}
