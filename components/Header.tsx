@@ -7,9 +7,6 @@ const Header = () => (
         <Link href='/'>Zack Murry</Link>
       </div>
       <div className='flex justify-around gap-6'>
-        <Link href='/' className='hover:underline'>
-          Home
-        </Link>
         <Link href='/research' className='hover:underline'>
           Research
         </Link>

@@ -6,10 +6,10 @@ const HomePage = () => (
   <div className='mx-auto grid max-w-2xl gap-12 px-4 py-8 pb-12 sm:px-8 leading-relaxed text-zinc-600'>
     <Header />
     <div className='flex justify-start items-center gap-4'>
-      <Image src='/headshot.jpg' alt='Headshot' width='48' height='48' className='rounded-[50%]' />
+      <Image src='/headshot.jpg' alt='Headshot' width='60' height='60' className='rounded-[50%]' />
       <div>
-        <h1 className='text-zinc-900 font-bold'>Zack Murry</h1>
-        <h1 className='text-zinc-600 text-sm'>CS & Math Junior at the University of Missouri</h1>
+        <h1 className='text-zinc-900 font-bold text-lg'>Zack Murry</h1>
+        <h1 className='text-zinc-600 text-md'>CS & Math Junior at the University of Missouri</h1>
       </div>
     </div>
     <article>
