@@ -49,19 +49,19 @@ export default function RootLayout({
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <script type='application/ld+json'>
           {`{
-            '@context': 'https://schema.org',
-            '@type': 'Person',
-            name: 'Zack Murry',
-            url: 'https://zackmurry.com',
-            sameAs: ['https://github.com/zackmurry', 'https://linkedin.com/in/zack-murry'],
-            jobTitle: 'Software Engineering Intern',
-            worksFor: {
-              '@type': 'Organization',
-              name: 'Garmin'
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Zack Murry",
+            "url": "https://zackmurry.com",
+            "sameAs": ["https://github.com/zackmurry", "https://linkedin.com/in/zack-murry"],
+            "jobTitle": "Software Engineering Intern",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Garmin"
             },
-            alumniOf: {
-              '@type': 'CollegeOrUniversity',
-              name: 'University of Missouri'
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Missouri"
             }
           }`}
         </script>
