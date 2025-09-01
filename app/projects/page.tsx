@@ -22,11 +22,12 @@ const ProjectsPage = () => (
         Google tweaks the Docs UI every year.
       </p>
       <p>
-        My latest project is <ExternalLink href='https://chessrs.zackmurry.com'>ChesSRS</ExternalLink>, a spaced-repetition
-        system (SRS) for learning chess openings using the same approach used in flashcard websites. I built it using Kotlin,
-        GraphQL, Spring Boot, and React. It integrates with <ExternalLink href='https://lichess.org'>Lichess</ExternalLink>,
-        an open-source chess server, for learning from 100,000+ studies, learning from previous chess matches, and displaying
-        data about openings, like an opening&apos;s name and its lines.
+        This summer, I released <ExternalLink href='https://chessrs.zackmurry.com'>ChesSRS</ExternalLink>, a
+        spaced-repetition system (SRS) for learning chess openings using the same approach used in flashcard websites. I
+        built it using Kotlin, GraphQL, Spring Boot, and React. It integrates with{' '}
+        <ExternalLink href='https://lichess.org'>Lichess</ExternalLink>, an open-source chess server, for learning from
+        100,000+ studies, analyzing previous chess matches, and displaying data about openings, like an opening&apos;s name
+        and popular variations.
       </p>
       <p>
         I&apos;ve also built a couple of compilers for custom programming languages. After reading{' '}
