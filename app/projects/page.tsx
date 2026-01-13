@@ -22,7 +22,7 @@ const ProjectsPage = () => (
         Google tweaks the Docs UI every year.
       </p>
       <p>
-        This summer, I released <ExternalLink href='https://chessrs.zackmurry.com'>ChesSRS</ExternalLink>, a
+        Last summer, I released <ExternalLink href='https://chessrs.zackmurry.com'>ChesSRS</ExternalLink>, a
         spaced-repetition system (SRS) for learning chess openings using the same approach used in flashcard websites. I
         built it using Kotlin, GraphQL, Spring Boot, and React. It integrates with{' '}
         <ExternalLink href='https://lichess.org'>Lichess</ExternalLink>, an open-source chess server, for learning from

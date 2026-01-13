@@ -21,7 +21,7 @@ const ResearchPage = () => (
         drones and 5G networks.
       </p>
       <p>
-        Last summer (2024), I interned at the University of Chicago under{' '}
+        In 2024, I interned at the University of Chicago under{' '}
         <ExternalLink href='https://cs.uchicago.edu/people/kate-keahey'>Dr. Kate Keahey</ExternalLink> as part of an NSF
         Research Experience for Undergraduates (REU) program. I leveraged their{' '}
         <ExternalLink href='https://floto.cs.uchicago.edu'>FLOTO</ExternalLink> platform for broadband data collection to
