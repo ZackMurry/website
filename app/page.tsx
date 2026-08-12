@@ -9,7 +9,7 @@ const HomePage = () => (
       <Image src='/headshot.jpg' alt='Headshot' width='60' height='60' className='rounded-[50%]' />
       <div>
         <h1 className='text-zinc-900 font-bold text-lg'>Zack Murry</h1>
-        <h1 className='text-zinc-600 text-md'>CS & Math Junior at the University of Missouri</h1>
+        <h1 className='text-zinc-600 text-md'>CS & Math Senior at the University of Missouri</h1>
       </div>
     </div>
     <article>
