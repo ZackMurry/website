@@ -25,11 +25,11 @@ export default function RootLayout({
         <meta name='title' content='Zack Murry | Software Engineer' />
         <meta
           name='description'
-          content='CS and Math student at University of Missouri. Software Engineering Intern at Garmin.'
+          content='CS and Math senior at the University of Missouri. Software engineering intern at Convoke, Capital One, and Garmin. Graduating May 2027 and looking for full-time software engineering roles.'
         />
         <meta
           name='keywords'
-          content='zack,murry,zackmurry,columbia,springfield,missouri,software,research,intern,garmin,mizzou'
+          content='zack,murry,zackmurry,columbia,springfield,missouri,software,research,intern,convoke,capital one,garmin,mizzou'
         />
         <meta name='robots' content='index, follow' />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
@@ -39,7 +39,7 @@ export default function RootLayout({
         <meta property='og:title' content='Zack Murry' />
         <meta
           property='og:description'
-          content='CS and Math student at University of Missouri. Software Engineering Intern at Garmin.'
+          content='CS and Math senior at the University of Missouri. Software engineering intern at Convoke, Capital One, and Garmin. Graduating May 2027 and looking for full-time software engineering roles.'
         />
         <meta property='og:url' content='https://zackmurry.com' />
         <meta property='og:image' content='https://zackmurry.com/headshot.jpg' />
@@ -53,10 +53,10 @@ export default function RootLayout({
             "name": "Zack Murry",
             "url": "https://zackmurry.com",
             "sameAs": ["https://github.com/zackmurry", "https://linkedin.com/in/zack-murry"],
-            "jobTitle": "Software Engineering Intern",
+            "jobTitle": "Software Engineer",
             "worksFor": {
               "@type": "Organization",
-              "name": "Garmin"
+              "name": "Capital One"
             },
             "alumniOf": {
               "@type": "CollegeOrUniversity",
