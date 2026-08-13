@@ -1,23 +1,37 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
-const Header = () => (
-  <header className='w-full'>
-    <div className='w-full flex justify-between text-sm font-monon'>
-      <div>
-        <Link href='/'>Zack Murry</Link>
-      </div>
-      <div className='flex justify-around gap-6'>
-        <Link href='/research' className='hover:underline'>
-          Research
-        </Link>
-        <Link href='/projects' className='hover:underline'>
-          Projects
-        </Link>
-        <Link href='/links' className='hover:underline'>
-          Links
-        </Link>
-      </div>
-    </div>
+interface NavLinkProps {
+  href: string
+  label: string
+  active?: boolean
+}
+
+const NavLink: FC<NavLinkProps> = ({ href, label, active }) => (
+  <li>
+    <Link
+      href={href}
+      className={`p-1.5 rounded underline-offset-4 decoration-stone-600 hover:bg-stone-300 ${active ? 'underline' : ''}`}
+    >
+      {label}
+    </Link>
+  </li>
+)
+
+interface HeaderProps {
+  active?: 'home'
+}
+
+const Header: FC<HeaderProps> = ({ active = 'home' }) => (
+  <header className='flex py-4 justify-between items-center'>
+    <Link href='/' className='rounded px-1.5 py-1 -mx-1.5 -my-1 hover:bg-stone-300'>
+      Zack Murry
+    </Link>
+    <nav className='flex'>
+      <ul className='flex'>
+        <NavLink href='/' label='Home' active={active === 'home'} />
+      </ul>
+    </nav>
   </header>
 )
 

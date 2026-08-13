@@ -1,4 +1,3 @@
-import { Link } from '@radix-ui/themes'
 import { FC, ReactNode } from 'react'
 
 interface Props {
@@ -8,9 +7,14 @@ interface Props {
 }
 
 const ExternalLink: FC<Props> = ({ href, children, className }) => (
-  <Link href={href} underline='always' target='_blank' rel='noreferrer noopener' className={`!cursor-pointer ${className}`}>
+  <a
+    href={href}
+    target='_blank'
+    rel='noreferrer noopener'
+    className={`underline underline-offset-2 rounded-[3px] py-[3px] -my-[3px] px-[2px] -mx-[2px] hover:bg-stone-300 ${className ?? ''}`}
+  >
     {children}
-  </Link>
+  </a>
 )
 
 export default ExternalLink

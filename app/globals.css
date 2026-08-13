@@ -6,10 +6,8 @@
 
 html,
 body {
-  /* font-family: 'sans', 'sans Fallback'; */
-  background-color: #ffffff;
+  background-color: #e7e5e4; /* stone-200 */
   font-family: var(--font-noto-sans);
-  font-weight: semibold;
 }
 /* 
 @media (prefers-color-scheme: dark) {

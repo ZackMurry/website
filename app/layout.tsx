@@ -1,6 +1,5 @@
 import { Noto_Sans, Noto_Sans_Mono } from 'next/font/google'
 import './globals.css'
-import '@radix-ui/themes/styles.css'
 
 const notoSans = Noto_Sans({
   subsets: ['latin'],
@@ -45,7 +44,7 @@ export default function RootLayout({
         <meta property='og:url' content='https://zackmurry.com' />
         <meta property='og:image' content='https://zackmurry.com/headshot.jpg' />
         <link rel='icon' href='/favicon.ico' />
-        <meta name='theme-color' content='#ffffff' />
+        <meta name='theme-color' content='#e7e5e4' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <script type='application/ld+json'>
           {`{
@@ -66,7 +65,11 @@ export default function RootLayout({
           }`}
         </script>
       </head>
-      <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>{children}</body>
+      <body
+        className={`${notoSans.variable} ${notoMono.variable} antialiased min-h-screen bg-stone-200 text-stone-800 text-sm leading-[22px]`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
