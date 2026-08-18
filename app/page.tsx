@@ -107,7 +107,7 @@ const HomePage = () => (
                 alt='Convoke logo'
                 width='16'
                 height='16'
-                className='w-4 h-4 inline rounded-[3px] align-[-3px] mr-[3px]'
+                className='w-4 h-4 inline rounded-[3px] align-[-3px] mr-[3px] ml-[1px]'
               />
               Convoke
             </ExternalLink>{' '}
